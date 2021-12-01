@@ -26,10 +26,10 @@ namespace CodeCelendar
             this.txtDec01_02 = new System.Windows.Forms.TextBox();
             this.groupDec01 = new System.Windows.Forms.GroupBox();
             this.groupDec02 = new System.Windows.Forms.GroupBox();
-            this.btnDec02_01 = new System.Windows.Forms.Button();
-            this.btnDec02_02 = new System.Windows.Forms.Button();
-            this.txtDec02_01 = new System.Windows.Forms.TextBox();
             this.txtDec02_02 = new System.Windows.Forms.TextBox();
+            this.txtDec02_01 = new System.Windows.Forms.TextBox();
+            this.btnDec02_02 = new System.Windows.Forms.Button();
+            this.btnDec02_01 = new System.Windows.Forms.Button();
             this.groupDec01.SuspendLayout();
             this.groupDec02.SuspendLayout();
             this.SuspendLayout();
@@ -94,14 +94,19 @@ namespace CodeCelendar
             this.groupDec02.TabStop = false;
             this.groupDec02.Text = "Dec 02";
             // 
-            // btnDec02_01
+            // txtDec02_02
             // 
-            this.btnDec02_01.Location = new System.Drawing.Point(5, 23);
-            this.btnDec02_01.Name = "btnDec02_01";
-            this.btnDec02_01.Size = new System.Drawing.Size(75, 23);
-            this.btnDec02_01.TabIndex = 0;
-            this.btnDec02_01.Text = "02-01";
-            this.btnDec02_01.UseVisualStyleBackColor = true;
+            this.txtDec02_02.Location = new System.Drawing.Point(87, 52);
+            this.txtDec02_02.Name = "txtDec02_02";
+            this.txtDec02_02.Size = new System.Drawing.Size(75, 20);
+            this.txtDec02_02.TabIndex = 3;
+            // 
+            // txtDec02_01
+            // 
+            this.txtDec02_01.Location = new System.Drawing.Point(6, 52);
+            this.txtDec02_01.Name = "txtDec02_01";
+            this.txtDec02_01.Size = new System.Drawing.Size(74, 20);
+            this.txtDec02_01.TabIndex = 2;
             // 
             // btnDec02_02
             // 
@@ -111,20 +116,17 @@ namespace CodeCelendar
             this.btnDec02_02.TabIndex = 1;
             this.btnDec02_02.Text = "02-02";
             this.btnDec02_02.UseVisualStyleBackColor = true;
+            this.btnDec02_02.Click += new System.EventHandler(this.btnDec02_02_Click);
             // 
-            // txtDec02_01
+            // btnDec02_01
             // 
-            this.txtDec02_01.Location = new System.Drawing.Point(6, 52);
-            this.txtDec02_01.Name = "txtDec02_01";
-            this.txtDec02_01.Size = new System.Drawing.Size(74, 20);
-            this.txtDec02_01.TabIndex = 2;
-            // 
-            // txtDec02_02
-            // 
-            this.txtDec02_02.Location = new System.Drawing.Point(87, 52);
-            this.txtDec02_02.Name = "txtDec02_02";
-            this.txtDec02_02.Size = new System.Drawing.Size(75, 20);
-            this.txtDec02_02.TabIndex = 3;
+            this.btnDec02_01.Location = new System.Drawing.Point(5, 23);
+            this.btnDec02_01.Name = "btnDec02_01";
+            this.btnDec02_01.Size = new System.Drawing.Size(75, 23);
+            this.btnDec02_01.TabIndex = 0;
+            this.btnDec02_01.Text = "02-01";
+            this.btnDec02_01.UseVisualStyleBackColor = true;
+            this.btnDec02_01.Click += new System.EventHandler(this.btnDec02_01_Click);
             // 
             // Form1
             // 
@@ -151,6 +153,16 @@ namespace CodeCelendar
         {
             _01_01_Depths helper = new _01_01_Depths();
             txtDec01_02.Text = helper.GetLargerMeasurementsGroupThree().ToString();
+        }
+
+        private void btnDec02_01_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDec02_02_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
