@@ -1399,12 +1399,14 @@ namespace CodeCelendar
 
         private void btnDec02_01_Click(object sender, EventArgs e)
         {
-
+            Dec_02 helper = new Dec_02();
+            txtDec02_01.Text = helper.calculateForwardDown();
         }
 
         private void btnDec02_02_Click(object sender, EventArgs e)
         {
-
+            Dec_02 helper = new Dec_02();
+            txtDec02_02.Text = helper.calculateForwardDownWithAim();
         }
     }
 }
