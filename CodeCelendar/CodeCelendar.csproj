@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Helpers\01-01_Depths.cs" />
     <Compile Include="Helpers\Day3\Day3_BinaryCreator.cs" />
+    <Compile Include="Helpers\Day4\Day4_Bingo.cs" />
     <Compile Include="Helpers\Dec_03.cs" />
     <Compile Include="Helpers\FileInput.cs" />
     <Compile Include="Helpers\StringInput.cs" />
@@ -89,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day3.txt" />
+    <Content Include="Day4.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

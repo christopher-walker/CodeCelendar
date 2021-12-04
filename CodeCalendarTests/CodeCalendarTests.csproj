@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Day3Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Day4Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

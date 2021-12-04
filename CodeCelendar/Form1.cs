@@ -1,5 +1,6 @@
 ﻿using CodeCelendar.Helpers;
 using CodeCelendar.Helpers.Day3;
+using CodeCelendar.Helpers.Day4;
 using CodeCelendar.Interface;
 using System;
 using System.Collections.Generic;
@@ -350,6 +351,7 @@ namespace CodeCelendar
             this.btnDec02_04.TabIndex = 1;
             this.btnDec02_04.Text = "04-02";
             this.btnDec02_04.UseVisualStyleBackColor = true;
+            this.btnDec02_04.Click += new System.EventHandler(this.btnDec02_04_Click);
             // 
             // btnDec04_01
             // 
@@ -359,6 +361,7 @@ namespace CodeCelendar
             this.btnDec04_01.TabIndex = 0;
             this.btnDec04_01.Text = "04-01";
             this.btnDec04_01.UseVisualStyleBackColor = true;
+            this.btnDec04_01.Click += new System.EventHandler(this.btnDec04_01_Click);
             // 
             // groupDec05
             // 
@@ -1427,6 +1430,29 @@ namespace CodeCelendar
             string[] output = dataInput.GetData();
             Day3_BinaryHandler bh = new Day3_BinaryHandler(output);
             txtDec03_02.Text = bh.GetLifeSupportRating().ToString();
+        }
+
+        private void btnDec04_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day4.txt");
+            string[] output = dataInput.GetData();
+
+            Day4_Bingo bingo = new Day4_Bingo(output);
+            Bingo_Card card = bingo.GetWinningCard();
+            //Assert.AreEqual(188, card.CalculateBordScore(false));
+            //Assert.AreEqual(24, bingo.GetLastCalledNumber());
+            //Assert.AreEqual(4512, card.CalculateBordScore(false) * bingo.GetLastCalledNumber());
+            txtDec04_01.Text = (card.CalculateBordScore(false) * bingo.GetLastCalledNumber()).ToString();
+        }
+
+        private void btnDec02_04_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day4.txt");
+            string[] output = dataInput.GetData();
+
+            Day4_Bingo bingo = new Day4_Bingo(output);
+            Bingo_Card card = bingo.GetLoosingCard();
+            txtDec04_02.Text = (card.CalculateBordScore(false) * bingo.GetLastCalledNumber()).ToString();
         }
     }
 }
