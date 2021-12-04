@@ -1,4 +1,6 @@
 ﻿using CodeCelendar.Helpers;
+using CodeCelendar.Helpers.Day3;
+using CodeCelendar.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -301,6 +303,7 @@ namespace CodeCelendar
             this.btnDec02_03.TabIndex = 1;
             this.btnDec02_03.Text = "03-02";
             this.btnDec02_03.UseVisualStyleBackColor = true;
+            this.btnDec02_03.Click += new System.EventHandler(this.btnDec02_03_Click);
             // 
             // btnDec03_01
             // 
@@ -310,6 +313,7 @@ namespace CodeCelendar
             this.btnDec03_01.TabIndex = 0;
             this.btnDec03_01.Text = "03-01";
             this.btnDec03_01.UseVisualStyleBackColor = true;
+            this.btnDec03_01.Click += new System.EventHandler(this.btnDec03_01_Click);
             // 
             // groupDec04
             // 
@@ -1407,6 +1411,22 @@ namespace CodeCelendar
         {
             Dec_02 helper = new Dec_02();
             txtDec02_02.Text = helper.calculateForwardDownWithAim();
+        }
+
+        private void btnDec03_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day3.txt");
+            string[] output = dataInput.GetData();
+            Day3_BinaryHandler bh = new Day3_BinaryHandler(output);
+            txtDec03_01.Text = bh.GetPowerConsumption().ToString();
+        }
+
+        private void btnDec02_03_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day3.txt");
+            string[] output = dataInput.GetData();
+            Day3_BinaryHandler bh = new Day3_BinaryHandler(output);
+            txtDec03_02.Text = bh.GetLifeSupportRating().ToString();
         }
     }
 }
