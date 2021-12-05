@@ -581,6 +581,7 @@ namespace CodeCelendar
             this.btnDec06_02.TabIndex = 1;
             this.btnDec06_02.Text = "06-02";
             this.btnDec06_02.UseVisualStyleBackColor = true;
+            this.btnDec06_02.Click += new System.EventHandler(this.btnDec06_02_Click);
             // 
             // btnDec06_01
             // 
@@ -590,6 +591,7 @@ namespace CodeCelendar
             this.btnDec06_01.TabIndex = 0;
             this.btnDec06_01.Text = "06-01";
             this.btnDec06_01.UseVisualStyleBackColor = true;
+            this.btnDec06_01.Click += new System.EventHandler(this.btnDec06_01_Click);
             // 
             // groupDec10
             // 
@@ -1474,6 +1476,18 @@ namespace CodeCelendar
 
             Day5_HydroVents hv = new Day5_HydroVents(output);
             txtDec05_02.Text = hv.GetOverlapsAllDirections(2).ToString();
+        }
+
+        private void btnDec06_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day6.txt");
+            string[] output = dataInput.GetData();
+        }
+
+        private void btnDec06_02_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day6.txt");
+            string[] output = dataInput.GetData();
         }
     }
 }
