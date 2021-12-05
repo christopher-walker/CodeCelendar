@@ -1,6 +1,7 @@
 ﻿using CodeCelendar.Helpers;
 using CodeCelendar.Helpers.Day3;
 using CodeCelendar.Helpers.Day4;
+using CodeCelendar.Helpers.Day5;
 using CodeCelendar.Interface;
 using System;
 using System.Collections.Generic;
@@ -398,6 +399,7 @@ namespace CodeCelendar
             this.btnDec05_02.TabIndex = 1;
             this.btnDec05_02.Text = "05-02";
             this.btnDec05_02.UseVisualStyleBackColor = true;
+            this.btnDec05_02.Click += new System.EventHandler(this.btnDec05_02_Click);
             // 
             // btnDec05_01
             // 
@@ -407,6 +409,7 @@ namespace CodeCelendar
             this.btnDec05_01.TabIndex = 0;
             this.btnDec05_01.Text = "05-01";
             this.btnDec05_01.UseVisualStyleBackColor = true;
+            this.btnDec05_01.Click += new System.EventHandler(this.btnDec05_01_Click);
             // 
             // groupDec09
             // 
@@ -1453,6 +1456,24 @@ namespace CodeCelendar
             Day4_Bingo bingo = new Day4_Bingo(output);
             Bingo_Card card = bingo.GetLoosingCard();
             txtDec04_02.Text = (card.CalculateBordScore(false) * bingo.GetLastCalledNumber()).ToString();
+        }
+
+        private void btnDec05_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day5.txt");
+            string[] output = dataInput.GetData();
+
+            Day5_HydroVents hv = new Day5_HydroVents(output);
+            txtDec05_01.Text = hv.GetOverlaps(2).ToString();
+        }
+
+        private void btnDec05_02_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day5.txt");
+            string[] output = dataInput.GetData();
+
+            Day5_HydroVents hv = new Day5_HydroVents(output);
+            txtDec05_02.Text = hv.GetOverlapsAllDirections(2).ToString();
         }
     }
 }
