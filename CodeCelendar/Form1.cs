@@ -2,6 +2,7 @@
 using CodeCelendar.Helpers.Day3;
 using CodeCelendar.Helpers.Day4;
 using CodeCelendar.Helpers.Day5;
+using CodeCelendar.Helpers.Day6;
 using CodeCelendar.Interface;
 using System;
 using System.Collections.Generic;
@@ -1480,14 +1481,20 @@ namespace CodeCelendar
 
         private void btnDec06_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day6.txt");
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day6.txt", ",");
             string[] output = dataInput.GetData();
+            Day6 lfClass = new Day6(output);
+            lfClass.Breed(80);
+            txtDec06_01.Text = lfClass.GetNumberOfFish().ToString();
         }
 
         private void btnDec06_02_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day6.txt");
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day6.txt", ",");
             string[] output = dataInput.GetData();
+            Day6 lfClass = new Day6(output);
+            lfClass.Breed(256);
+            txtDec06_02.Text = lfClass.GetNumberOfFish().ToString();
         }
     }
 }
