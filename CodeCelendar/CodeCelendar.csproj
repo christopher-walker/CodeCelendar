@@ -52,17 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\01-01_Depths.cs" />
-    <Compile Include="Helpers\Day3\Day3_BinaryCreator.cs" />
-    <Compile Include="Helpers\Day4\Day4_Bingo.cs" />
-    <Compile Include="Helpers\Day5\Day5_HydroVents.cs" />
-    <Compile Include="Helpers\Day6\Day6.cs" />
-    <Compile Include="Helpers\Dec_03.cs" />
+    <Compile Include="Helpers\Completed\Day01\01-01_Depths.cs" />
+    <Compile Include="Helpers\Completed\Day03\Day3_BinaryCreator.cs" />
+    <Compile Include="Helpers\Completed\Day04\Day4_Bingo.cs" />
+    <Compile Include="Helpers\Completed\Day05\Day5_HydroVents.cs" />
+    <Compile Include="Helpers\Completed\Day06\Day6.cs" />
+    <Compile Include="Helpers\Day7\Day7.cs" />
+    <Compile Include="Helpers\Completed\Day03\Dec_03.cs" />
     <Compile Include="Helpers\FileInput.cs" />
     <Compile Include="Helpers\StringInput.cs" />
     <Compile Include="Interface\IDataInput.cs" />
-    <Compile Include="Helpers\Dec_02.cs" />
-    <Compile Include="Helpers\Dec_02_Item.cs" />
+    <Compile Include="Helpers\Completed\Day02\Dec_02.cs" />
+    <Compile Include="Helpers\Completed\Day02\Dec_02_Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -93,6 +94,7 @@
   <ItemGroup>
     <Content Include="Day3.txt" />
     <Content Include="Day4.txt" />
+    <Content Include="Day7.txt" />
     <Content Include="Day6.txt" />
     <Content Include="Day5.txt" />
   </ItemGroup>

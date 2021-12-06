@@ -3,6 +3,7 @@ using CodeCelendar.Helpers.Day3;
 using CodeCelendar.Helpers.Day4;
 using CodeCelendar.Helpers.Day5;
 using CodeCelendar.Helpers.Day6;
+using CodeCelendar.Helpers.Day7;
 using CodeCelendar.Interface;
 using System;
 using System.Collections.Generic;
@@ -537,6 +538,7 @@ namespace CodeCelendar
             this.btnDec07_02.TabIndex = 1;
             this.btnDec07_02.Text = "07-02";
             this.btnDec07_02.UseVisualStyleBackColor = true;
+            this.btnDec07_02.Click += new System.EventHandler(this.btnDec07_02_Click);
             // 
             // btnDec07_01
             // 
@@ -546,6 +548,7 @@ namespace CodeCelendar
             this.btnDec07_01.TabIndex = 0;
             this.btnDec07_01.Text = "07-01";
             this.btnDec07_01.UseVisualStyleBackColor = true;
+            this.btnDec07_01.Click += new System.EventHandler(this.btnDec07_01_Click);
             // 
             // groupDec06
             // 
@@ -1495,6 +1498,24 @@ namespace CodeCelendar
             Day6 lfClass = new Day6(output);
             lfClass.Breed(256);
             txtDec06_02.Text = lfClass.GetNumberOfFish().ToString();
+        }
+
+        private void btnDec07_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day7.txt", ",");
+            string[] output = dataInput.GetData();
+            Day7 lfClass = new Day7(output);
+
+            txtDec07_01.Text = "Hello";
+        }
+
+        private void btnDec07_02_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day7.txt", ",");
+            string[] output = dataInput.GetData();
+            Day7 lfClass = new Day7(output);
+
+            txtDec07_02.Text = "Hello";
         }
     }
 }

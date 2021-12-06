@@ -21,20 +21,22 @@ namespace CodeCalendarTests
         public void TestBinaryCreator()
         {
             Day3_BinaryCreator bc = new Day3_BinaryCreator("11111");
-            Assert.AreEqual(bc.GetValue(1), 1);
-            Assert.AreEqual(bc.GetValue(2), 2);
-            Assert.AreEqual(bc.GetValue(3), 4);
-            Assert.AreEqual(bc.GetValue(4), 8);
-            Assert.AreEqual(bc.GetValue(5), 16);
-            Assert.AreEqual(bc.GetValue(6), -1);
+            Assert.AreEqual(16,bc.GetValue(1));
+            Assert.AreEqual(8, bc.GetValue(2));
+            Assert.AreEqual(4, bc.GetValue(3));
+            Assert.AreEqual(2, bc.GetValue(4));
+            Assert.AreEqual(1, bc.GetValue(5));
+            Assert.AreEqual(0, bc.GetValue(6));
+            Assert.AreEqual(-1, bc.GetSetting(6));
 
             Day3_BinaryCreator bca = new Day3_BinaryCreator("00000");
-            Assert.AreEqual(bca.GetValue(1), 0);
-            Assert.AreEqual(bca.GetValue(2), 0);
-            Assert.AreEqual(bca.GetValue(3), 0);
-            Assert.AreEqual(bca.GetValue(4), 0);
-            Assert.AreEqual(bca.GetValue(5), 0);
-            Assert.AreEqual(bca.GetValue(6), -1);
+            Assert.AreEqual(0, bca.GetValue(1));
+            Assert.AreEqual(0, bca.GetValue(2));
+            Assert.AreEqual(0, bca.GetValue(3));
+            Assert.AreEqual(0, bca.GetValue(4));
+            Assert.AreEqual(0, bca.GetValue(5));
+            Assert.AreEqual(0, bca.GetValue(6));
+            Assert.AreEqual(-1, bca.GetSetting(6));
         }
 
         [TestMethod]
