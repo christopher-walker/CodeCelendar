@@ -26,14 +26,15 @@ namespace CodeCelendar.Helpers
         }
         public string[] GetData()
         {
+            string inputPath = System.IO.Path.Combine(Environment.CurrentDirectory, "InputFiles", filePath);
             if (string.IsNullOrEmpty(fileParse))
             {
                 
-                return System.IO.File.ReadAllLines(System.IO.Path.Combine(Environment.CurrentDirectory, filePath));
+                return System.IO.File.ReadAllLines(inputPath);
             }
             else
             {
-                string output = System.IO.File.ReadAllText(filePath);
+                string output = System.IO.File.ReadAllText(inputPath);
                 char[] parseChar = fileParse.ToCharArray();
                 return output.Split(parseChar[0]);
             }
