@@ -57,8 +57,9 @@
     <Compile Include="Helpers\Completed\Day04\Day4_Bingo.cs" />
     <Compile Include="Helpers\Completed\Day05\Day5_HydroVents.cs" />
     <Compile Include="Helpers\Completed\Day06\Day6.cs" />
-    <Compile Include="Helpers\Day7\Day7.cs" />
+    <Compile Include="Helpers\Completed\Day07\Day7.cs" />
     <Compile Include="Helpers\Completed\Day03\Dec_03.cs" />
+    <Compile Include="Helpers\Day08\Day08.cs" />
     <Compile Include="Helpers\FileInput.cs" />
     <Compile Include="Helpers\StringInput.cs" />
     <Compile Include="Interface\IDataInput.cs" />
@@ -92,11 +93,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Day3.txt" />
-    <Content Include="Day4.txt" />
-    <Content Include="Day7.txt" />
-    <Content Include="Day6.txt" />
-    <Content Include="Day5.txt" />
+    <Content Include="Day03.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day04.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day08.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day07.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day06.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day05.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

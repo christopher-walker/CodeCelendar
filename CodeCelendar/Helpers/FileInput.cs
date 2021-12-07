@@ -28,7 +28,8 @@ namespace CodeCelendar.Helpers
         {
             if (string.IsNullOrEmpty(fileParse))
             {
-                return System.IO.File.ReadAllLines(filePath);
+                
+                return System.IO.File.ReadAllLines(System.IO.Path.Combine(Environment.CurrentDirectory, filePath));
             }
             else
             {

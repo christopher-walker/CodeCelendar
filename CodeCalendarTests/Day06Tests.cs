@@ -8,7 +8,7 @@ using System;
 namespace CodeCalendarTests
 {
     [TestClass]
-    public class Day6Tests
+    public class Day06Tests
     {
         private string[] GetData()
         {

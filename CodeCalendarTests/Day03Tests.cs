@@ -7,7 +7,7 @@ using System;
 namespace CodeCalendarTests
 {
     [TestClass]
-    public class Day3Tests
+    public class Day03Tests
     {
         [TestMethod]
         public void TestCorrectNumberOfColumns()
