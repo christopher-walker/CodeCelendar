@@ -1504,18 +1504,18 @@ namespace CodeCelendar
         {
             IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day7.txt", ",");
             string[] output = dataInput.GetData();
-            Day7 lfClass = new Day7(output);
+            Day7 positionChange = new Day7(output);
 
-            txtDec07_01.Text = "Hello";
+            txtDec07_01.Text = positionChange.GetSmallestPositionChange().ToString();
         }
 
         private void btnDec07_02_Click(object sender, EventArgs e)
         {
             IDataInput dataInput = new FileInput(@"C:\Users\christopher.walker\Source\Repos\christopher-walker\CodeCelendar\CodeCelendar\Day7.txt", ",");
             string[] output = dataInput.GetData();
-            Day7 lfClass = new Day7(output);
+            Day7 positionChange = new Day7(output);
 
-            txtDec07_02.Text = "Hello";
+            txtDec07_02.Text = positionChange.GetSmallestPositionChange2().ToString();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace CodeCalendarTests
     {
         private string[] GetData()
         {
-            IDataInput dataInput = new StringInput("3,4,3,1,2", ',');
+            IDataInput dataInput = new StringInput("16,1,2,0,4,2,7,1,2,14", ',');
             return dataInput.GetData();
         }
 
@@ -30,7 +30,7 @@ namespace CodeCalendarTests
             string[] output = GetData();
             Day7 day = new Day7(output);
 
-            Assert.AreEqual(1, 1);
+            Assert.AreEqual(37, day.GetSmallestPositionChange());
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace CodeCalendarTests
             string[] output = GetData();
             Day7 day = new Day7(output);
 
-            Assert.AreEqual(1, 1);
+            Assert.AreEqual(168, day.GetSmallestPositionChange2());
         }
 
 
