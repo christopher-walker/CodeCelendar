@@ -1523,11 +1523,11 @@ namespace CodeCelendar
 
         private void btnDec08_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day08.txt", ",");
+            IDataInput dataInput = new FileInput(@"day08.txt");
             string[] output = dataInput.GetData();
             Day08 day8 = new Day08(output);
-
-            txtDec08_01.Text = "";
+            
+            txtDec08_01.Text = day8.GetSetValues().ToString();
         }
 
         private void btnDec08_02_Click(object sender, EventArgs e)
