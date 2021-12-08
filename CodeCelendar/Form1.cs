@@ -1527,16 +1527,21 @@ namespace CodeCelendar
             string[] output = dataInput.GetData();
             Day08 day8 = new Day08(output);
             
-            txtDec08_01.Text = day8.GetSetValues().ToString();
+            //txtDec08_01.Text = day8.GetSetValues().ToString();
         }
 
         private void btnDec08_02_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day08.txt", ",");
+
+            //string[] output = GetData();
+            //Day08 day = new Day08(output);
+            //Assert.AreEqual(61229, day.CalculateOutputs());
+
+            IDataInput dataInput = new FileInput(@"day08.txt");
             string[] output = dataInput.GetData();
             Day08 day8 = new Day08(output);
 
-            txtDec08_02.Text = "";
+            txtDec08_02.Text = day8.CalculateOutputs().ToString();
 
         }
     }
