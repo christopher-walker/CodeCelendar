@@ -1,5 +1,6 @@
 ﻿using CodeCelendar.Helpers;
 using CodeCelendar.Helpers.Day08;
+using CodeCelendar.Helpers.Day09;
 using CodeCelendar.Helpers.Day3;
 using CodeCelendar.Helpers.Day4;
 using CodeCelendar.Helpers.Day5;
@@ -193,7 +194,7 @@ namespace CodeCelendar
             // 
             this.txtDec01_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec01_01.Name = "txtDec01_01";
-            this.txtDec01_01.Size = new System.Drawing.Size(75, 22);
+            this.txtDec01_01.Size = new System.Drawing.Size(75, 20);
             this.txtDec01_01.TabIndex = 1;
             // 
             // btnDec01_02
@@ -210,7 +211,7 @@ namespace CodeCelendar
             // 
             this.txtDec01_02.Location = new System.Drawing.Point(88, 52);
             this.txtDec01_02.Name = "txtDec01_02";
-            this.txtDec01_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec01_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec01_02.TabIndex = 3;
             // 
             // groupDec01
@@ -243,14 +244,14 @@ namespace CodeCelendar
             // 
             this.txtDec02_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec02_02.Name = "txtDec02_02";
-            this.txtDec02_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec02_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec02_02.TabIndex = 3;
             // 
             // txtDec02_01
             // 
             this.txtDec02_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec02_01.Name = "txtDec02_01";
-            this.txtDec02_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec02_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec02_01.TabIndex = 2;
             // 
             // btnDec02_02
@@ -290,14 +291,14 @@ namespace CodeCelendar
             // 
             this.txtDec03_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec03_02.Name = "txtDec03_02";
-            this.txtDec03_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec03_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec03_02.TabIndex = 3;
             // 
             // txtDec03_01
             // 
             this.txtDec03_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec03_01.Name = "txtDec03_01";
-            this.txtDec03_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec03_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec03_01.TabIndex = 2;
             // 
             // btnDec02_03
@@ -337,14 +338,14 @@ namespace CodeCelendar
             // 
             this.txtDec04_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec04_02.Name = "txtDec04_02";
-            this.txtDec04_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec04_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec04_02.TabIndex = 3;
             // 
             // txtDec04_01
             // 
             this.txtDec04_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec04_01.Name = "txtDec04_01";
-            this.txtDec04_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec04_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec04_01.TabIndex = 2;
             // 
             // btnDec02_04
@@ -384,14 +385,14 @@ namespace CodeCelendar
             // 
             this.txtDec05_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec05_02.Name = "txtDec05_02";
-            this.txtDec05_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec05_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec05_02.TabIndex = 3;
             // 
             // txtDec05_01
             // 
             this.txtDec05_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec05_01.Name = "txtDec05_01";
-            this.txtDec05_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec05_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec05_01.TabIndex = 2;
             // 
             // btnDec05_02
@@ -431,14 +432,14 @@ namespace CodeCelendar
             // 
             this.txtDec09_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec09_02.Name = "txtDec09_02";
-            this.txtDec09_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec09_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec09_02.TabIndex = 3;
             // 
             // txtDec09_01
             // 
             this.txtDec09_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec09_01.Name = "txtDec09_01";
-            this.txtDec09_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec09_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec09_01.TabIndex = 2;
             // 
             // btnDec09_02
@@ -449,6 +450,7 @@ namespace CodeCelendar
             this.btnDec09_02.TabIndex = 1;
             this.btnDec09_02.Text = "09-02";
             this.btnDec09_02.UseVisualStyleBackColor = true;
+            this.btnDec09_02.Click += new System.EventHandler(this.btnDec09_02_Click);
             // 
             // btnDec09_01
             // 
@@ -458,6 +460,7 @@ namespace CodeCelendar
             this.btnDec09_01.TabIndex = 0;
             this.btnDec09_01.Text = "09-01";
             this.btnDec09_01.UseVisualStyleBackColor = true;
+            this.btnDec09_01.Click += new System.EventHandler(this.btnDec09_01_Click);
             // 
             // groupDec08
             // 
@@ -476,14 +479,14 @@ namespace CodeCelendar
             // 
             this.txtDec08_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec08_02.Name = "txtDec08_02";
-            this.txtDec08_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec08_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec08_02.TabIndex = 3;
             // 
             // txtDec08_01
             // 
             this.txtDec08_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec08_01.Name = "txtDec08_01";
-            this.txtDec08_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec08_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec08_01.TabIndex = 2;
             // 
             // btnDec08_02
@@ -523,14 +526,14 @@ namespace CodeCelendar
             // 
             this.txtDec07_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec07_02.Name = "txtDec07_02";
-            this.txtDec07_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec07_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec07_02.TabIndex = 3;
             // 
             // txtDec07_01
             // 
             this.txtDec07_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec07_01.Name = "txtDec07_01";
-            this.txtDec07_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec07_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec07_01.TabIndex = 2;
             // 
             // btnDec07_02
@@ -570,14 +573,14 @@ namespace CodeCelendar
             // 
             this.txtDec06_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec06_02.Name = "txtDec06_02";
-            this.txtDec06_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec06_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec06_02.TabIndex = 3;
             // 
             // txtDec06_01
             // 
             this.txtDec06_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec06_01.Name = "txtDec06_01";
-            this.txtDec06_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec06_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec06_01.TabIndex = 2;
             // 
             // btnDec06_02
@@ -617,14 +620,14 @@ namespace CodeCelendar
             // 
             this.txtDec10_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec10_02.Name = "txtDec10_02";
-            this.txtDec10_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec10_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec10_02.TabIndex = 3;
             // 
             // txtDec10_01
             // 
             this.txtDec10_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec10_01.Name = "txtDec10_01";
-            this.txtDec10_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec10_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec10_01.TabIndex = 2;
             // 
             // btnDec10_02
@@ -662,14 +665,14 @@ namespace CodeCelendar
             // 
             this.txtDec15_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec15_02.Name = "txtDec15_02";
-            this.txtDec15_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec15_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec15_02.TabIndex = 3;
             // 
             // txtDec15_01
             // 
             this.txtDec15_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec15_01.Name = "txtDec15_01";
-            this.txtDec15_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec15_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec15_01.TabIndex = 2;
             // 
             // btnDec15_02
@@ -707,14 +710,14 @@ namespace CodeCelendar
             // 
             this.txtDec14_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec14_02.Name = "txtDec14_02";
-            this.txtDec14_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec14_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec14_02.TabIndex = 3;
             // 
             // txtDec14_01
             // 
             this.txtDec14_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec14_01.Name = "txtDec14_01";
-            this.txtDec14_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec14_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec14_01.TabIndex = 2;
             // 
             // btnDec14_02
@@ -752,14 +755,14 @@ namespace CodeCelendar
             // 
             this.txtDec13_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec13_02.Name = "txtDec13_02";
-            this.txtDec13_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec13_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec13_02.TabIndex = 3;
             // 
             // txtDec13_01
             // 
             this.txtDec13_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec13_01.Name = "txtDec13_01";
-            this.txtDec13_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec13_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec13_01.TabIndex = 2;
             // 
             // btnDec13_02
@@ -797,14 +800,14 @@ namespace CodeCelendar
             // 
             this.txtDec12_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec12_02.Name = "txtDec12_02";
-            this.txtDec12_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec12_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec12_02.TabIndex = 3;
             // 
             // txtDec12_01
             // 
             this.txtDec12_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec12_01.Name = "txtDec12_01";
-            this.txtDec12_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec12_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec12_01.TabIndex = 2;
             // 
             // btnDec12_02
@@ -842,14 +845,14 @@ namespace CodeCelendar
             // 
             this.txtDec11_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec11_02.Name = "txtDec11_02";
-            this.txtDec11_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec11_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec11_02.TabIndex = 3;
             // 
             // txtDec11_01
             // 
             this.txtDec11_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec11_01.Name = "txtDec11_01";
-            this.txtDec11_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec11_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec11_01.TabIndex = 2;
             // 
             // btnDec11_02
@@ -887,14 +890,14 @@ namespace CodeCelendar
             // 
             this.txtDec20_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec20_02.Name = "txtDec20_02";
-            this.txtDec20_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec20_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec20_02.TabIndex = 3;
             // 
             // txtDec20_01
             // 
             this.txtDec20_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec20_01.Name = "txtDec20_01";
-            this.txtDec20_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec20_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec20_01.TabIndex = 2;
             // 
             // btnDec20_02
@@ -932,14 +935,14 @@ namespace CodeCelendar
             // 
             this.txtDec19_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec19_02.Name = "txtDec19_02";
-            this.txtDec19_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec19_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec19_02.TabIndex = 3;
             // 
             // txtDec19_01
             // 
             this.txtDec19_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec19_01.Name = "txtDec19_01";
-            this.txtDec19_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec19_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec19_01.TabIndex = 2;
             // 
             // btnDec19_02
@@ -977,14 +980,14 @@ namespace CodeCelendar
             // 
             this.txtDec18_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec18_02.Name = "txtDec18_02";
-            this.txtDec18_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec18_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec18_02.TabIndex = 3;
             // 
             // txtDec18_01
             // 
             this.txtDec18_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec18_01.Name = "txtDec18_01";
-            this.txtDec18_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec18_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec18_01.TabIndex = 2;
             // 
             // btnDec18_02
@@ -1022,14 +1025,14 @@ namespace CodeCelendar
             // 
             this.txtDec17_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec17_02.Name = "txtDec17_02";
-            this.txtDec17_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec17_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec17_02.TabIndex = 3;
             // 
             // txtDec17_01
             // 
             this.txtDec17_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec17_01.Name = "txtDec17_01";
-            this.txtDec17_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec17_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec17_01.TabIndex = 2;
             // 
             // btnDec17_02
@@ -1067,14 +1070,14 @@ namespace CodeCelendar
             // 
             this.txtDec16_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec16_02.Name = "txtDec16_02";
-            this.txtDec16_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec16_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec16_02.TabIndex = 3;
             // 
             // txtDec16_01
             // 
             this.txtDec16_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec16_01.Name = "txtDec16_01";
-            this.txtDec16_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec16_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec16_01.TabIndex = 2;
             // 
             // btnDec16_02
@@ -1112,14 +1115,14 @@ namespace CodeCelendar
             // 
             this.txtDec25_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec25_02.Name = "txtDec25_02";
-            this.txtDec25_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec25_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec25_02.TabIndex = 3;
             // 
             // txtDec25_01
             // 
             this.txtDec25_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec25_01.Name = "txtDec25_01";
-            this.txtDec25_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec25_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec25_01.TabIndex = 2;
             // 
             // btnDec25_02
@@ -1157,14 +1160,14 @@ namespace CodeCelendar
             // 
             this.txtDec24_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec24_02.Name = "txtDec24_02";
-            this.txtDec24_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec24_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec24_02.TabIndex = 3;
             // 
             // txtDec24_01
             // 
             this.txtDec24_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec24_01.Name = "txtDec24_01";
-            this.txtDec24_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec24_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec24_01.TabIndex = 2;
             // 
             // btnDec24_02
@@ -1202,14 +1205,14 @@ namespace CodeCelendar
             // 
             this.txtDec23_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec23_02.Name = "txtDec23_02";
-            this.txtDec23_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec23_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec23_02.TabIndex = 3;
             // 
             // txtDec23_01
             // 
             this.txtDec23_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec23_01.Name = "txtDec23_01";
-            this.txtDec23_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec23_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec23_01.TabIndex = 2;
             // 
             // btnDec23_02
@@ -1247,14 +1250,14 @@ namespace CodeCelendar
             // 
             this.txtDec22_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec22_02.Name = "txtDec22_02";
-            this.txtDec22_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec22_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec22_02.TabIndex = 3;
             // 
             // txtDec22_01
             // 
             this.txtDec22_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec22_01.Name = "txtDec22_01";
-            this.txtDec22_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec22_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec22_01.TabIndex = 2;
             // 
             // btnDec22_02
@@ -1292,14 +1295,14 @@ namespace CodeCelendar
             // 
             this.txtDec21_02.Location = new System.Drawing.Point(87, 52);
             this.txtDec21_02.Name = "txtDec21_02";
-            this.txtDec21_02.Size = new System.Drawing.Size(75, 22);
+            this.txtDec21_02.Size = new System.Drawing.Size(75, 20);
             this.txtDec21_02.TabIndex = 3;
             // 
             // txtDec21_01
             // 
             this.txtDec21_01.Location = new System.Drawing.Point(6, 52);
             this.txtDec21_01.Name = "txtDec21_01";
-            this.txtDec21_01.Size = new System.Drawing.Size(74, 22);
+            this.txtDec21_01.Size = new System.Drawing.Size(74, 20);
             this.txtDec21_01.TabIndex = 2;
             // 
             // btnDec21_02
@@ -1451,9 +1454,6 @@ namespace CodeCelendar
 
             Day4_Bingo bingo = new Day4_Bingo(output);
             Bingo_Card card = bingo.GetWinningCard();
-            //Assert.AreEqual(188, card.CalculateBordScore(false));
-            //Assert.AreEqual(24, bingo.GetLastCalledNumber());
-            //Assert.AreEqual(4512, card.CalculateBordScore(false) * bingo.GetLastCalledNumber());
             txtDec04_01.Text = (card.CalculateBordScore(false) * bingo.GetLastCalledNumber()).ToString();
         }
 
@@ -1526,23 +1526,32 @@ namespace CodeCelendar
             IDataInput dataInput = new FileInput(@"day08.txt");
             string[] output = dataInput.GetData();
             Day08 day8 = new Day08(output);
-            
-            //txtDec08_01.Text = day8.GetSetValues().ToString();
+            txtDec08_01.Text = day8.CalculateNumberOfSimpleValues().ToString();
         }
 
         private void btnDec08_02_Click(object sender, EventArgs e)
         {
-
-            //string[] output = GetData();
-            //Day08 day = new Day08(output);
-            //Assert.AreEqual(61229, day.CalculateOutputs());
-
             IDataInput dataInput = new FileInput(@"day08.txt");
             string[] output = dataInput.GetData();
             Day08 day8 = new Day08(output);
 
             txtDec08_02.Text = day8.CalculateOutputs().ToString();
+        }
 
+        private void btnDec09_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"day09.txt");
+            string[] output = dataInput.GetData();
+            Day09 day = new Day09(output);
+            txtDec09_01.Text = day.GetResultsPart1();
+        }
+
+        private void btnDec09_02_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"day09.txt");
+            string[] output = dataInput.GetData();
+            Day09 day = new Day09(output);
+            txtDec09_02.Text = day.GetResultsPart2();
         }
     }
 }

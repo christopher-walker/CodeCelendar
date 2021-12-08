@@ -1,5 +1,6 @@
 ﻿using CodeCelendar.Helpers;
 using CodeCelendar.Helpers.Day08;
+using CodeCelendar.Helpers.Day09;
 using CodeCelendar.Helpers.Day5;
 using CodeCelendar.Helpers.Day6;
 using CodeCelendar.Helpers.Day7;
@@ -10,7 +11,7 @@ using System;
 namespace CodeCalendarTests
 {
     [TestClass]
-    public class Day08Tests
+    public class Day09Tests
     {
         private string[] GetData()
         {
@@ -29,8 +30,8 @@ namespace CodeCalendarTests
         public void Day8Part1()
         {
             string[] output = GetData();
-            Day08 day = new Day08(output);
-            Assert.AreEqual(26, day.CalculateNumberOfSimpleValues());
+            Day09 day = new Day09(output);
+            //Assert.AreEqual(26, day.CalculateNumberOfSimpleValues());
 
         }
 
@@ -38,8 +39,8 @@ namespace CodeCalendarTests
         public void Day8Part2()
         {
             string[] output = GetData();
-            Day08 day = new Day08(output);
-            Assert.AreEqual(61229, day.CalculateOutputs());
+            Day09 day = new Day09(output);
+            //Assert.AreEqual(61229, day.CalculateOutputs());
 
         }
 
