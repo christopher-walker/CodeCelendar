@@ -27,20 +27,20 @@ namespace CodeCalendarTests
         }
 
         [TestMethod]
-        public void Day9Part1()
+        public void Day10Part1()
         {
             string[] output = GetData();
             Day10 day = new Day10(output);
-            Assert.AreEqual("15", day.GetResultsPart1());
+            Assert.AreEqual(string.Empty, day.GetResultsPart1());
 
         }
 
         [TestMethod]
-        public void Day9Part2()
+        public void Day10Part2()
         {
             string[] output = GetData();
             Day10 day = new Day10(output);
-            Assert.AreEqual("1134", day.GetResultsPart2());
+            Assert.AreEqual(string.Empty, day.GetResultsPart2());
         }
 
 
