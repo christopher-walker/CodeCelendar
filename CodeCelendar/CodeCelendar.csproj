@@ -60,6 +60,7 @@
     <Compile Include="Helpers\Completed\Day07\Day7.cs" />
     <Compile Include="Helpers\Completed\Day03\Dec_03.cs" />
     <Compile Include="Helpers\Completed\Day08\Day08.cs" />
+    <Compile Include="Helpers\Completed\Day09\Day09.cs" />
     <Compile Include="Helpers\Day09\Day09.cs" />
     <Compile Include="Helpers\FileInput.cs" />
     <Compile Include="Helpers\StringInput.cs" />
@@ -98,6 +99,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="InputFiles\Day04.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="InputFiles\Day10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="InputFiles\Day09.txt">
