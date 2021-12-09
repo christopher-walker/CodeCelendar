@@ -23,7 +23,7 @@ namespace CodeCalendarTests
         public void PopulateData()
         {
             string[] output = GetData();
-            Assert.AreEqual(10, output.Length);
+            Assert.AreEqual(5, output.Length);
         }
 
         [TestMethod]
