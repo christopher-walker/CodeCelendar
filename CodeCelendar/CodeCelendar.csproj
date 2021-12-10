@@ -61,7 +61,7 @@
     <Compile Include="Helpers\Completed\Day03\Dec_03.cs" />
     <Compile Include="Helpers\Completed\Day08\Day08.cs" />
     <Compile Include="Helpers\Completed\Day09\Day09.cs" />
-    <Compile Include="Helpers\Day09\Day09.cs" />
+    <Compile Include="Helpers\Day10\Day10.cs" />
     <Compile Include="Helpers\FileInput.cs" />
     <Compile Include="Helpers\StringInput.cs" />
     <Compile Include="Interface\IDataInput.cs" />
