@@ -15,7 +15,7 @@ namespace CodeCalendarTests
     {
         private string[] GetData()
         {
-            IDataInput dataInput = new StringInput("[({(<(())[]>[[{[]{<()<>>,[(()[<>])]({[<{<<[]>>(,{([(<{}[<>[]}>{[]{[(<()>,(((({<>}<{<{<>}{[]{[]{},[[<[([]))<([[{}[[()]]],[{[{({}]{}}([{[{{{}}([],{<[[]]>}<{[{[{[]{()[[[],[<(<(<(<{}))><([]([](),<{([([[(<>()){}]>(<<{{,<{([{{}}[<[[[<>{}]]]>[]]", ',');
+            IDataInput dataInput = new StringInput("5483143223,2745854711,5264556173,6141336146,6357385478,4167524645,2176841721,6882881134,4846848554,5283751526", ',');
             return dataInput.GetData();
         }
 
@@ -31,7 +31,7 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day11 day = new Day11(output);
-            Assert.AreEqual("", day.GetResultsPart1());
+            Assert.AreEqual("1656", day.GetResultsPart1());
 
         }
 
@@ -40,7 +40,7 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day11 day = new Day11(output);
-            Assert.AreEqual("", day.GetResultsPart2());
+            Assert.AreEqual("195", day.GetResultsPart2());
         }
 
 
