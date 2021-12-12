@@ -775,6 +775,7 @@ namespace CodeCelendar
             this.btnDec13_02.TabIndex = 1;
             this.btnDec13_02.Text = "13-02";
             this.btnDec13_02.UseVisualStyleBackColor = true;
+            this.btnDec13_02.Click += new System.EventHandler(this.btnDec13_02_Click);
             // 
             // btnDec13_01
             // 
@@ -784,6 +785,7 @@ namespace CodeCelendar
             this.btnDec13_01.TabIndex = 0;
             this.btnDec13_01.Text = "13-01";
             this.btnDec13_01.UseVisualStyleBackColor = true;
+            this.btnDec13_01.Click += new System.EventHandler(this.btnDec13_01_Click);
             // 
             // groupDec12
             // 
@@ -1606,6 +1608,22 @@ namespace CodeCelendar
             string[] output = dataInput.GetData();
             Day12 day = new Day12(output);
             txtDec12_02.Text = day.GetResultsPart2();
+        }
+
+        private void btnDec13_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"day13.txt");
+            string[] output = dataInput.GetData();
+            Day13 day = new Day13(output);
+            txtDec13_01.Text = day.GetResultsPart1();
+        }
+
+        private void btnDec13_02_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"day13.txt");
+            string[] output = dataInput.GetData();
+            Day13 day = new Day13(output);
+            txtDec13_02.Text = day.GetResultsPart2();
         }
     }
 }
