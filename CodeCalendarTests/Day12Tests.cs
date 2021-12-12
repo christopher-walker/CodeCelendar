@@ -35,7 +35,7 @@ namespace CodeCalendarTests
         public void PopulateData()
         {
             string[] output = GetData();
-            Assert.AreEqual(10, output.Length);
+            Assert.AreEqual(18, output.Length);
         }
 
         [TestMethod]
