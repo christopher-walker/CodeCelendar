@@ -15,7 +15,19 @@ namespace CodeCalendarTests
     {
         private string[] GetData()
         {
-            IDataInput dataInput = new StringInput("5483143223,2745854711,5264556173,6141336146,6357385478,4167524645,2176841721,6882881134,4846848554,5283751526", ',');
+            IDataInput dataInput = new StringInput("fs-end,he-DX,fs-he,start-DX,pj-DX,end-zg,zg-sl,zg-pj,pj-he,RW-he,fs-DX,pj-RW,zg-RW,start-pj,he-WI,zg-he,pj-fs,start-RW", ',');
+            return dataInput.GetData();
+        }
+
+        private string[] GetDataA()
+        {
+            IDataInput dataInput = new StringInput("start-A,start-b,A-c,A-b,b-d,A-end,b-end", ',');
+            return dataInput.GetData();
+        }
+
+        private string[] GetDataB()
+        {
+            IDataInput dataInput = new StringInput("dc-end,HN-start,start-kj,dc-start,dc-HN,LN-dc,HN-end,kj-sa,kj-HN,kj-dc", ',');
             return dataInput.GetData();
         }
 
@@ -31,8 +43,16 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day12 day = new Day12(output);
-            //Assert.AreEqual("1656", day.GetResultsPart1());
+            Assert.AreEqual("226", day.GetResultsPart1());
 
+        }
+
+        [TestMethod]
+        public void Day12Part2A()
+        {
+            string[] output = GetDataA();
+            Day12 day = new Day12(output);
+            Assert.AreEqual("36", day.GetResultsPart2());
         }
 
         [TestMethod]
@@ -40,7 +60,7 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day12 day = new Day12(output);
-            //Assert.AreEqual("195", day.GetResultsPart2());
+            Assert.AreEqual("3509", day.GetResultsPart2());
         }
 
 
