@@ -15,19 +15,7 @@ namespace CodeCalendarTests
     {
         private string[] GetData()
         {
-            IDataInput dataInput = new StringInput("fs-end,he-DX,fs-he,start-DX,pj-DX,end-zg,zg-sl,zg-pj,pj-he,RW-he,fs-DX,pj-RW,zg-RW,start-pj,he-WI,zg-he,pj-fs,start-RW", ',');
-            return dataInput.GetData();
-        }
-
-        private string[] GetDataA()
-        {
-            IDataInput dataInput = new StringInput("start-A,start-b,A-c,A-b,b-d,A-end,b-end", ',');
-            return dataInput.GetData();
-        }
-
-        private string[] GetDataB()
-        {
-            IDataInput dataInput = new StringInput("dc-end,HN-start,start-kj,dc-start,dc-HN,LN-dc,HN-end,kj-sa,kj-HN,kj-dc", ',');
+            IDataInput dataInput = new StringInput("6,10|0,14|9,10|0,3|10,4|4,11|6,0|6,12|4,1|0,13|10,12|3,4|3,0|8,4|1,10|2,14|8,10|9,0||fold along y=7|fold along x=5", '|');
             return dataInput.GetData();
         }
 
@@ -35,7 +23,7 @@ namespace CodeCalendarTests
         public void PopulateData()
         {
             string[] output = GetData();
-            Assert.AreEqual(18, output.Length);
+            Assert.AreEqual(21, output.Length);
         }
 
         [TestMethod]
@@ -43,7 +31,9 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day13 day = new Day13(output);
-            //Assert.AreEqual("226", day.GetResultsPart1());
+            Assert.AreEqual(2, day.GetFolds());
+            Assert.AreEqual(18, day.GetCoordinates());
+            Assert.AreEqual("17", day.GetResultsPart1());
 
         }
 
@@ -52,7 +42,7 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day13 day = new Day13(output);
-            //Assert.AreEqual("3509", day.GetResultsPart2());
+            Assert.AreEqual("#####\r\n#...#\r\n#...#\r\n#...#\r\n#####\r\n", day.GetResultsPart2());
         }
 
 
