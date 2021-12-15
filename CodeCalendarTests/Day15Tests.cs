@@ -15,7 +15,7 @@ namespace CodeCalendarTests
     {
         private string[] GetData()
         {
-            IDataInput dataInput = new StringInput("NNCB,,CH -> B,HH -> N,CB -> H,NH -> C,HB -> C,HC -> B,HN -> C,NN -> C,BH -> H,NC -> B,NB -> B,BN -> B,BB -> N,BC -> B,CC -> N,CN -> C", ',');
+            IDataInput dataInput = new StringInput("1163751742,1381373672,2136511328,3694931569,7463417111,1319128137,1359912421,3125421639,1293138521,2311944581", ',');
             return dataInput.GetData();
         }
 
@@ -23,7 +23,7 @@ namespace CodeCalendarTests
         public void PopulateData()
         {
             string[] output = GetData();
-            Assert.AreEqual(18, output.Length);
+            Assert.AreEqual(10, output.Length);
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day15 day = new Day15(output);
-            //Assert.AreEqual("1588", day.GetResultsPart1());
+            Assert.AreEqual("40", day.GetResultsPart1());
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day15 day = new Day15(output);
-            //Assert.AreEqual("2188189693529", day.GetResultsPart2());
+            Assert.AreEqual("315", day.GetResultsPart2());
         }
 
 
