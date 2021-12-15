@@ -1640,7 +1640,8 @@ namespace CodeCelendar
         {
             IDataInput dataInput = new FileInput(@"day14.txt");
             string[] output = dataInput.GetData();
-            Day14 day = new Day14(output);
+
+            Day14b day = new Day14b(output);
             txtDec14_02.Text = day.GetResultsPart2();
         }
     }

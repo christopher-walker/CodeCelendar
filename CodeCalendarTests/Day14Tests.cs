@@ -15,7 +15,7 @@ namespace CodeCalendarTests
     {
         private string[] GetData()
         {
-            IDataInput dataInput = new StringInput("6,10|0,14|9,10|0,3|10,4|4,11|6,0|6,12|4,1|0,13|10,12|3,4|3,0|8,4|1,10|2,14|8,10|9,0||fold along y=7|fold along x=5", '|');
+            IDataInput dataInput = new StringInput("NNCB,,CH -> B,HH -> N,CB -> H,NH -> C,HB -> C,HC -> B,HN -> C,NN -> C,BH -> H,NC -> B,NB -> B,BN -> B,BB -> N,BC -> B,CC -> N,CN -> C", ',');
             return dataInput.GetData();
         }
 
@@ -23,7 +23,7 @@ namespace CodeCalendarTests
         public void PopulateData()
         {
             string[] output = GetData();
-            Assert.AreEqual(21, output.Length);
+            Assert.AreEqual(18, output.Length);
         }
 
         [TestMethod]
@@ -31,18 +31,23 @@ namespace CodeCalendarTests
         {
             string[] output = GetData();
             Day14 day = new Day14(output);
-            //Assert.AreEqual(2, day.GetFolds());
-            //Assert.AreEqual(18, day.GetCoordinates());
-            //Assert.AreEqual("17", day.GetResultsPart1());
+            Assert.AreEqual("1588", day.GetResultsPart1());
+        }
 
+        [TestMethod]
+        public void Day14Part1MethodB()
+        {
+            string[] output = GetData();
+            Day14b day = new Day14b(output);
+            Assert.AreEqual("1588", day.GetResultsPart1());
         }
 
         [TestMethod]
         public void Day14Part2()
         {
             string[] output = GetData();
-            Day14 day = new Day14(output);
-            //Assert.AreEqual("#####\r\n#...#\r\n#...#\r\n#...#\r\n#####\r\n", day.GetResultsPart2());
+            Day14b day = new Day14b(output);
+            Assert.AreEqual("2188189693529", day.GetResultsPart2());
         }
 
 
