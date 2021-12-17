@@ -1100,6 +1100,7 @@ namespace CodeCelendar
             this.btnDec16_02.TabIndex = 1;
             this.btnDec16_02.Text = "16-02";
             this.btnDec16_02.UseVisualStyleBackColor = true;
+            this.btnDec16_02.Click += new System.EventHandler(this.btnDec16_02_Click);
             // 
             // btnDec16_01
             // 
@@ -1109,6 +1110,7 @@ namespace CodeCelendar
             this.btnDec16_01.TabIndex = 0;
             this.btnDec16_01.Text = "16-01";
             this.btnDec16_01.UseVisualStyleBackColor = true;
+            this.btnDec16_01.Click += new System.EventHandler(this.btnDec16_01_Click);
             // 
             // groupDec25
             // 
@@ -1663,6 +1665,30 @@ namespace CodeCelendar
 
             Day15 day = new Day15(output);
             txtDec15_02.Text = day.GetResultsPart2();
+        }
+
+        private void btnDec16_01_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"day16.txt");
+            string[] output = dataInput.GetData();
+
+            Day16 day = new Day16(output);
+            string binary = day.ConvertHexToBinary(day.hexChars);
+
+            Instruction instruction = new Instruction(binary);
+            txtDec16_01.Text = instruction.GetTotalVersionNumber().ToString();
+        }
+
+        private void btnDec16_02_Click(object sender, EventArgs e)
+        {
+            IDataInput dataInput = new FileInput(@"day16.txt");
+            string[] output = dataInput.GetData();
+
+            Day16 day = new Day16(output);
+            string binary = day.ConvertHexToBinary(day.hexChars);
+
+            Instruction instruction = new Instruction(binary);
+            txtDec16_02.Text = instruction.Calculate().ToString();
         }
     }
 }

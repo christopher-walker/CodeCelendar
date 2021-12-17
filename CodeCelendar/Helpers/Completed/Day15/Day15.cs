@@ -215,7 +215,7 @@ namespace CodeCelendar.Helpers
 
             while (unvisitedCoordinates.Count > 0)
             {
-                unvisitedCoordinates = unvisitedCoordinates.Where(x => x.Value.cost == int.MaxValue || x.Value.cost < trackedCoordinates[new VisitedCoordinate(quickXMax, quickYMax)].cost).ToList();
+                //unvisitedCoordinates = unvisitedCoordinates.Where(x => x.Value.cost == int.MaxValue || x.Value.cost < trackedCoordinates[new VisitedCoordinate(quickXMax, quickYMax)].cost).ToList();
                 long smallest = unvisitedCoordinates.Min(x => x.Value.cost);
                 KeyValuePair<VisitedCoordinate, VisitedCoordinateValues>  smallestItem = unvisitedCoordinates.Where(x => x.Value.cost == smallest).FirstOrDefault();
 
@@ -291,6 +291,12 @@ namespace CodeCelendar.Helpers
 
         public string GetResultsPart1()
         {
+            //int[,] ExpandedMapOutput = ExpandRiskMap(5);
+            ////string outMap = OutputGrid(ExpandedMapOutput);
+            //GetTrackedCoordinates(ExpandedMapOutput);
+            //GetShortestRoute(ExpandedMapOutput);
+            //return trackedCoordinates[new VisitedCoordinate(ExpandedMapOutput.GetLength(0) - 1, ExpandedMapOutput.GetLength(1) - 1)].cost.ToString();
+
             GetTrackedCoordinates(riskMap);
             GetShortestRoute(riskMap);
             //dijkstra(riskMap, 0);
@@ -300,7 +306,8 @@ namespace CodeCelendar.Helpers
             //{
             //    i = i > path.Values.Sum() ? path.Values.Sum() : i;
             //}
-            return trackedCoordinates[end].cost.ToString();  
+            return trackedCoordinates[new VisitedCoordinate(riskMap.GetLength(0) - 1, riskMap.GetLength(1) - 1)].cost.ToString();
+            //return trackedCoordinates[end].cost.ToString();  
             //i.ToString();
         }
 
