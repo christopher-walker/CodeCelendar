@@ -26,7 +26,7 @@ namespace CodeCelendar.Helpers
         }
         public string[] GetData()
         {
-            string inputPath = System.IO.Path.Combine(Environment.CurrentDirectory, "InputFiles\\2022", filePath);
+            string inputPath = System.IO.Path.Combine(Environment.CurrentDirectory, "InputFiles", filePath);
             if (string.IsNullOrEmpty(fileParse))
             {
                 

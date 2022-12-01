@@ -52,7 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\Completed\Day01\01-01Calories.cs" />
     <Compile Include="Helpers\Completed\Day01\01-01_Depths.cs" />
     <Compile Include="Helpers\Completed\Day03\Day3_BinaryCreator.cs" />
     <Compile Include="Helpers\Completed\Day04\Day4_Bingo.cs" />
@@ -102,9 +101,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="InputFiles\2022\2022Day01.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="InputFiles\Day03.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

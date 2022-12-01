@@ -1423,22 +1423,14 @@ namespace CodeCelendar
 
         private void btnDec01_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"2022Day01.txt");
-            string[] output = dataInput.GetData();
-            Dec01_01_Calories bh = new Dec01_01_Calories(output);
-            txtDec01_01.Text = bh.GetMaxCals().ToString();
-
-
-            //_01_01_Depths helper = new _01_01_Depths();
-            //txtDec01_01.Text = helper.GetLargerMeasurements().ToString();
+            _01_01_Depths helper = new _01_01_Depths();
+            txtDec01_01.Text = helper.GetLargerMeasurements().ToString();
         }
 
         private void btnDec01_02_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"2022Day01.txt");
-            string[] output = dataInput.GetData();
-            Dec01_01_Calories bh = new Dec01_01_Calories(output);
-            txtDec01_02.Text = bh.Top3Cals().ToString();
+            _01_01_Depths helper = new _01_01_Depths();
+            txtDec01_02.Text = helper.GetLargerMeasurementsGroupThree().ToString();
         }
 
         private void btnDec02_01_Click(object sender, EventArgs e)
