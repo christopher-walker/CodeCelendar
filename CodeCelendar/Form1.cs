@@ -1443,30 +1443,38 @@ namespace CodeCelendar
 
         private void btnDec02_01_Click(object sender, EventArgs e)
         {
-            Dec_02 helper = new Dec_02();
-            txtDec02_01.Text = helper.calculateForwardDown();
+            IDataInput dataInput = new FileInput(@"2022Day02.txt");
+            string[] output = dataInput.GetData();
+            Dec_02_2022 helper = new Dec_02_2022(output);
+            txtDec02_01.Text = helper.GuidePoints.ToString();
         }
 
         private void btnDec02_02_Click(object sender, EventArgs e)
         {
-            Dec_02 helper = new Dec_02();
-            txtDec02_02.Text = helper.calculateForwardDownWithAim();
+            IDataInput dataInput = new FileInput(@"2022Day02.txt");
+            string[] output = dataInput.GetData();
+            //string[] output = new string[] { "A Y", "B X", "C Z" };
+
+            Dec_02_2022 helper = new Dec_02_2022(output);
+            txtDec02_02.Text = helper.RealGuidePoints.ToString();
+            //Dec_02 helper = new Dec_02();
+            //txtDec02_02.Text = helper.calculateForwardDownWithAim();
         }
 
         private void btnDec03_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day03.txt");
+            IDataInput dataInput = new FileInput(@"2022Day03.txt");
             string[] output = dataInput.GetData();
-            Day3_BinaryHandler bh = new Day3_BinaryHandler(output);
-            txtDec03_01.Text = bh.GetPowerConsumption().ToString();
+            Day3_2022 bh = new Day3_2022(output);
+            txtDec03_01.Text = bh.GetValues().ToString();
         }
 
         private void btnDec02_03_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day03.txt");
+            IDataInput dataInput = new FileInput(@"2022Day03.txt");
             string[] output = dataInput.GetData();
-            Day3_BinaryHandler bh = new Day3_BinaryHandler(output);
-            txtDec03_02.Text = bh.GetLifeSupportRating().ToString();
+            Day3_2022 bh = new Day3_2022(output);
+            txtDec03_02.Text = bh.GetBadgeValue().ToString();
         }
 
         private void btnDec04_01_Click(object sender, EventArgs e)
