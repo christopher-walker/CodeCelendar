@@ -57,6 +57,7 @@
     <Compile Include="Helpers\Completed\Day02\Dec_02_2022.cs" />
     <Compile Include="Helpers\Completed\Day03\Day3_2022.cs" />
     <Compile Include="Helpers\Completed\Day03\Day3_BinaryCreator.cs" />
+    <Compile Include="Helpers\Completed\Day04\Day4_2022_Supplies.cs" />
     <Compile Include="Helpers\Completed\Day04\Day4_Bingo.cs" />
     <Compile Include="Helpers\Completed\Day05\Day5_HydroVents.cs" />
     <Compile Include="Helpers\Completed\Day06\Day6.cs" />
@@ -104,6 +105,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="InputFiles\2022\2022Day04.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="InputFiles\2022\2022Day04A.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="InputFiles\2022\2022Day03.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

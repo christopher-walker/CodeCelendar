@@ -1479,22 +1479,24 @@ namespace CodeCelendar
 
         private void btnDec04_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day04.txt");
+            IDataInput dataInput = new FileInput(@"2022Day04.txt");
             string[] output = dataInput.GetData();
 
-            Day4_Bingo bingo = new Day4_Bingo(output);
-            Bingo_Card card = bingo.GetWinningCard();
-            txtDec04_01.Text = (card.CalculateBordScore(false) * bingo.GetLastCalledNumber()).ToString();
+            Day4_2022_Supplies supplies = new Day4_2022_Supplies(output);
+
+            //Bingo_Card card = bingo.GetWinningCard();
+            txtDec04_01.Text = supplies.GetInternalContains().ToString();
         }
 
         private void btnDec02_04_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day04.txt");
+            IDataInput dataInput = new FileInput(@"2022Day04.txt");
             string[] output = dataInput.GetData();
 
-            Day4_Bingo bingo = new Day4_Bingo(output);
-            Bingo_Card card = bingo.GetLoosingCard();
-            txtDec04_02.Text = (card.CalculateBordScore(false) * bingo.GetLastCalledNumber()).ToString();
+            Day4_2022_Supplies supplies = new Day4_2022_Supplies(output);
+
+            //Bingo_Card card = bingo.GetWinningCard();
+            txtDec04_02.Text = supplies.GetInternalOverlap().ToString();
         }
 
         private void btnDec05_01_Click(object sender, EventArgs e)
