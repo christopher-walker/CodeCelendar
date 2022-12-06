@@ -59,6 +59,7 @@
     <Compile Include="Helpers\Completed\Day03\Day3_BinaryCreator.cs" />
     <Compile Include="Helpers\Completed\Day04\Day4_2022_Supplies.cs" />
     <Compile Include="Helpers\Completed\Day04\Day4_Bingo.cs" />
+    <Compile Include="Helpers\Completed\Day05\Day5_2022_SupplyStacks.cs" />
     <Compile Include="Helpers\Completed\Day05\Day5_HydroVents.cs" />
     <Compile Include="Helpers\Completed\Day06\Day6.cs" />
     <Compile Include="Helpers\Completed\Day07\Day7.cs" />
@@ -106,6 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="InputFiles\2022\2022Day04.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="InputFiles\2022\2022Day05B.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="InputFiles\2022\2022Day05.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="InputFiles\2022\2022Day04A.txt">

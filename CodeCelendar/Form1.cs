@@ -1501,20 +1501,20 @@ namespace CodeCelendar
 
         private void btnDec05_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day05.txt");
+            IDataInput dataInput = new FileInput(@"2022Day05.txt");
             string[] output = dataInput.GetData();
 
-            Day5_HydroVents hv = new Day5_HydroVents(output);
-            txtDec05_01.Text = hv.GetOverlaps(2).ToString();
+            Day5_2022_SupplyStacks hv = new Day5_2022_SupplyStacks(output);
+            txtDec05_01.Text = hv.TopOfEachStack();
         }
 
         private void btnDec05_02_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day05.txt");
+            IDataInput dataInput = new FileInput(@"2022Day05.txt");
             string[] output = dataInput.GetData();
 
-            Day5_HydroVents hv = new Day5_HydroVents(output);
-            txtDec05_02.Text = hv.GetOverlapsAllDirections(2).ToString();
+            Day5_2022_SupplyStacks hv = new Day5_2022_SupplyStacks(output);
+            txtDec05_02.Text = hv.TopOfEachStack2001();
         }
 
         private void btnDec06_01_Click(object sender, EventArgs e)
