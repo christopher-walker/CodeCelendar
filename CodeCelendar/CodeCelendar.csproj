@@ -62,6 +62,7 @@
     <Compile Include="Helpers\Completed\Day05\Day5_2022_SupplyStacks.cs" />
     <Compile Include="Helpers\Completed\Day05\Day5_HydroVents.cs" />
     <Compile Include="Helpers\Completed\Day06\Day6.cs" />
+    <Compile Include="Helpers\Completed\Day06\Day6_2022.cs" />
     <Compile Include="Helpers\Completed\Day07\Day7.cs" />
     <Compile Include="Helpers\Completed\Day03\Dec_03.cs" />
     <Compile Include="Helpers\Completed\Day08\Day08.cs" />
@@ -107,6 +108,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="InputFiles\2022\2022Day04.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="InputFiles\2022\2022Day06.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="InputFiles\2022\2022Day05B.txt">

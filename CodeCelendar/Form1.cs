@@ -5,6 +5,7 @@ using CodeCelendar.Helpers.Day3;
 using CodeCelendar.Helpers.Day4;
 using CodeCelendar.Helpers.Day5;
 using CodeCelendar.Helpers.Day6;
+using CodeCelendar.Helpers.Day6_2020;
 using CodeCelendar.Helpers.Day7;
 using CodeCelendar.Interface;
 using System;
@@ -1519,20 +1520,20 @@ namespace CodeCelendar
 
         private void btnDec06_01_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day06.txt", ",");
+            IDataInput dataInput = new FileInput(@"2022Day06.txt");
             string[] output = dataInput.GetData();
-            Day6 lfClass = new Day6(output);
-            lfClass.Breed(80);
-            txtDec06_01.Text = lfClass.GetNumberOfFish().ToString();
+
+            Day6_2022 hv = new Day6_2022(output);
+            txtDec06_01.Text = hv.GetPosition().ToString();
         }
 
         private void btnDec06_02_Click(object sender, EventArgs e)
         {
-            IDataInput dataInput = new FileInput(@"day06.txt", ",");
+            IDataInput dataInput = new FileInput(@"2022Day06.txt");
             string[] output = dataInput.GetData();
-            Day6 lfClass = new Day6(output);
-            lfClass.Breed(256);
-            txtDec06_02.Text = lfClass.GetNumberOfFish().ToString();
+
+            Day6_2022 hv = new Day6_2022(output);
+            txtDec06_02.Text = hv.GetPosition(14).ToString();
         }
 
         private void btnDec07_01_Click(object sender, EventArgs e)
